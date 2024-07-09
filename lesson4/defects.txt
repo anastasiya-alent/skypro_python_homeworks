@@ -1,0 +1,18 @@
+Дефект №1
+Функция to_list(string, delimeter, result) при передачи строки содержащей пробел и разделитель, возращает путой список. 
+А должна возращать список с одним символом пробел (string = ' ', delimeter = ',', result = [' ']). AssertionError: assert [] == [' ']
+
+Дефект №2
+Функция contains при передаче вторым параметром пустой строки, возращаться True. А должно возращается False.
+string = ' ', symbol = '', result = False 
+assert True == False
+
+Дефект №3
+Функция starts_with при передаче вторым параметром пустой строки, возращаться True. А должно возращается False.
+string = 'abc', symbol = '', result = False
+assert True == False
+
+Дефект №4
+Функция end_with при передаче вторым параметром пустой строки, возращаться True. А должно возращается False.
+string = 'abc', symbol = '', result = False
+assert True == False
